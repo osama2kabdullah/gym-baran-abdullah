@@ -11,13 +11,13 @@ import {
 class Hero extends Component {
   render() {
     return (
-      <div className="flex justify-flex items-center gap-5 pt-12">
+      <div className="flex justify-flex items-center gap-5">
         <div className="grid gap-6">
-          <h1 className="text-5xl text-[#262524]">
+          <h1 className="text-[56px] font-[700] text-[#262524]">
             Healthy in side <br />
             <span className="text-[#8382EB]">fresh</span> out side
           </h1>
-          <p className="text-[#8382EB] w-[80%]">
+          <p className="text-[#8382EB] text-[16px] w-[80%]">
             Exercise is a very important need for our body. Health and fitness
             will be obtained if you can do regular exercise and run a healthy
             routine.
