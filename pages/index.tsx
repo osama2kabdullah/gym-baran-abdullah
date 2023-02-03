@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import Navbar from "@/components/Navbar";
+import Head from "next/head";
+import Logo from "../components/Logo";
 
 export default function Home() {
   return (
@@ -9,11 +11,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <main className="md:px-12 px-6 md:py-6 py-3">
+        <Navbar/>
       </main>
     </>
-  )
+  );
 }
