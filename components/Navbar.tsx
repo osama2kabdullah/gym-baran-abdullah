@@ -14,9 +14,13 @@ const Navbar = () => {
             {option}
           </span>
         ))}
-        <CustomButton>Log in</CustomButton>
+        <CustomButton paddingX={7}>
+          Log in
+        </CustomButton>
       </nav>
-      <button className="flex md:hidden text-4xl"><FiMenu/></button>
+      <button className="flex md:hidden text-4xl">
+        <FiMenu />
+      </button>
     </div>
   );
 };
