@@ -5,15 +5,8 @@ import secondHero from "../public/secondHero.png";
 
 const HeroSecond = () => {
   return (
-    <div className="pt-12 lg:grid-cols-2 gap-3 items-center grid grid-cols-1">
-      <Image
-        src={secondHero}
-        alt="gym baran"
-        // width={600} // automatically provided
-        // height={500} automatically provided
-        // blurDataURL="data:..." automatically provided
-        // placeholder="blur" // Optional blur-up while loading
-      />
+    <div className="flex-col-reverse lg:flex lg:flex-row-reverse gap-3 items-center justify between">
+      
       <div className="lg:p-12 p-6">
       <HeroText
         para={
@@ -22,6 +15,11 @@ const HeroSecond = () => {
         head={"Best full body workout to lose fat"}
       />
       </div>
+      
+      <Image
+        src={secondHero}
+        alt="gym baran"
+      />
     </div>
   );
 };

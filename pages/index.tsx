@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Gym Baran</title>
+        <title>Home - Gym Baran</title>
         <meta name="description" content="Develop by Md abdullah" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
