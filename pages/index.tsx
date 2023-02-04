@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{maxWidth: '1400px'}} className="grid mx-auto p-12 gap-12">
+      <main style={{maxWidth: '1400px'}} className="grid mx-auto p-6 gap-12">
         <HeroFirst/>
         <Intro/>
         <Pricing/>
