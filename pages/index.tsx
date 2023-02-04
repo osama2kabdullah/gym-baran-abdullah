@@ -1,4 +1,5 @@
-import Hero from "@/components/Hero";
+import HeroFirst from "@/components/HeroFirst";
+import HeroSecond from "@/components/HeroSecond";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
@@ -16,9 +17,10 @@ export default function Home() {
       </Head>
       <main className="md:px-12 px-6 md:py-6 grid gap-12 py-3">
         <Navbar/>
-        {/* <Hero/> */}
+        <HeroFirst/>
         <Intro/>
         <Pricing/>
+        <HeroSecond/>
       </main>
     </>
   );

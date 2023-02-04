@@ -1,29 +1,19 @@
-import React, { Component } from "react";
-
-interface ButtonProps {
-  children: any;
-  gap?: number;
-  paddingX?: number;
-  background?: string,
-  text?: string
+import React, { Component } from 'react';
+interface ButtonTypes {
+  children: string,
+  paddingX?:number
 }
-
-class CustomButton extends Component<ButtonProps> {
+class CustomButton extends Component<ButtonTypes> {
   render() {
-    const { children, gap, paddingX, background, text } = this.props;
+    const {children, paddingX} = this.props;
     return (
-      <button className={`bg-[${background}] text-[${text}] p-3 px-${paddingX} rounded-xl flex justify-between items-center gap-${gap}`}>
-        {children}
-      </button>
+      <button className={`flex items-center justify-between bg-[#264373] text-[#FFFFFF] p-3 px-${paddingX} rounded-[10px] gap-12`}>{children}</button>
     );
   }
 }
 
 (CustomButton as any).defaultProps = {
-    gap: 24,
-    paddingX: 4,
-    background: '#264373',
-    text: '#FFFFFF'
-  };
+  paddingX:3
+};
 
 export default CustomButton;
