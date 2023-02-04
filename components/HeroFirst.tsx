@@ -3,20 +3,17 @@ import React from "react";
 import hero from "../public/hero.png";
 import HeroText from "./HeroText";
 import { SiNike, SiAdidas, SiPuma, SiReebok } from "react-icons/si";
-import gymFirstHero from "../public/gymFirstHero.png";
-import Navbar from "./Navbar";
 
 const HeroFirst = () => {
   return (
-    <div className="grid gap-12">
-      <Navbar />
-      <div className="gap-6 md:grid-cols-2 grid grid-cols-1 items-center">
-        <div>
+      <div className="gap-6 lg:grid-cols-2 grid grid-cols-1 items-center">
+        <div className="lg:p-12 p-6">
+          <h1 className="md:text-[56px] text-[28px] font-bold">Healthy in side <span className="text-[#8382EB]">fresh</span> out side</h1>
           <HeroText
             para={
               "Exercise is a very important need for our body. Health and fitness will be obtained if you can do regular exercise and run a healthy routine."
             }
-            head={"Healthy in side fresh out side"}
+            head={""}
             secondButton={true}
           />
           <h3 className="pt-12">Brands:</h3>
@@ -39,7 +36,6 @@ const HeroFirst = () => {
           />
         </div>
       </div>
-    </div>
   );
 };
 

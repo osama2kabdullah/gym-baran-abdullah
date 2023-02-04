@@ -14,7 +14,7 @@ class HeroText extends Component<HerosText> {
     const { head, para, headSize, secondButton } = this.props;
     return (
       <div className="flex-col">
-        <h1 className={`md:text-[${headSize}px] text-[28px] font-[400]`}>
+        <h1 style={{fontWeight: `${secondButton && 'bold'}`}} className={`md:text-[${headSize}px] text-[28px] font-[400]`}>
           {head}
         </h1>
         <p className="text-[#8382EB] my-6 text-[16px]">{para}</p>
@@ -23,7 +23,7 @@ class HeroText extends Component<HerosText> {
             Get started <HiOutlineArrowRight size={18} />
           </button>
           {secondButton ? (
-            <button className="flex items-center justify-between bg-[#FFFFFF] text-[#264373] p-3 rounded-[10px] ">
+            <button style={{boxShadow: '0px 20px 80px rgba(51, 78, 123, 0.3)'}} className="flex items-center justify-between bg-[#FFFFFF] text-[#264373] p-3 rounded-[10px] ">
               <IoMdArrowDroprightCircle size={18} color={"#264373"} />
               Learn more{" "}
             </button>

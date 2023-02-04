@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: "Sporting Grotesque";
+    src: url("../public/SportingGrotesque-Regular.woff") format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Sporting Grotesque";
+    src: url("../public/SportingGrotesque-Bold.woff") format("woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../public/Poppins-Regular.woff") format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../public/Poppins-SemiBold.woff") format("woff");
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Poppins';
+}
+h3 {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-family: 'Sporting Grotesque';
+}

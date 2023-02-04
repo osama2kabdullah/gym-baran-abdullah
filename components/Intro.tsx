@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className=" md:grid gap-12 items-center grid-cols-2">
+    <div className="lg:p-12 p-6 md:grid gap-12 items-center grid-cols-2">
       <h1 className="md:text-[46px] text-[28px] text-[#262524]">
         Healthy in side fresh out side
       </h1>

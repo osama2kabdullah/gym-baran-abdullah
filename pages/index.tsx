@@ -4,9 +4,15 @@ import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Head from "next/head";
-import Logo from "../components/Logo";
+import bgtwo from '../public/bgtwo.png';
 
 export default function Home() {
+  const mainbg = {
+    maxWidth: "1400px",
+    backgroundImage: `url(${bgtwo.src})`,
+  backgroundPosition: "top left",
+  backgroundRepeat: "no-repeat",
+  }
   return (
     <>
       <Head>
@@ -15,11 +21,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{maxWidth: '1400px'}} className="grid mx-auto p-6 gap-12">
-        <HeroFirst/>
-        <Intro/>
-        <Pricing/>
-        <HeroSecond/>
+      <main style={mainbg} 
+      className={`grid mx-auto gap-12`}
+      >
+        <Navbar />
+        <HeroFirst />
+        <Intro />
+        <Pricing />
+        <HeroSecond />
       </main>
     </>
   );
