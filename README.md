@@ -4,7 +4,7 @@
 IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.
 
 ### Screenshot of this app's UI
-
+[responsive image](https://raw.githubusercontent.com/osama2kabdullah/gym-baran-abdullah/master/public/all-devices-black.png)
 
 ### For contribution
 1. Fork this repository
