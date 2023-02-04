@@ -14,9 +14,12 @@ const Navbar = () => {
             {option}
           </span>
         ))}
-        <CustomButton paddingX={7}>
-          Log in
-        </CustomButton>
+        {/* <CustomButton paddingX={7}>
+          
+        </CustomButton> */}
+        
+        <button className=' bg-[#264373] text-[#FFFFFF] p-3 px-7 rounded-[10px]'>Log in </button>
+        
       </nav>
       <button className="flex md:hidden text-4xl">
         <FiMenu />

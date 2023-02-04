@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import { SiAdidas } from "react-icons/si";
 
 const Pricing = () => {
   const options = [1, 2, 3];
@@ -9,7 +10,7 @@ const Pricing = () => {
       {options.map((option, index) => (
         <div key={index} className="flex gap-5 items-center">
           <div className="bg-[#FFFFFF] opacity-20 backdrop-blur-[32px] p-6 rounded-[20px]">
-            hello
+          <SiAdidas size={50} />
           </div>
           <div className="grid gap-2">
             <h3 className="text-[#FFFFFF] text-xl font-bold">
