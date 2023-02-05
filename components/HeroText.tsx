@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { HiOutlineArrowRight } from "react-icons/hi";
-import { IoMdArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDroprightCircle, IoMdArrowDroprightCircle } from "react-icons/io";
 
 interface HerosText {
   head: string;
@@ -20,7 +20,8 @@ class HeroText extends Component<HerosText> {
         <p className="text-[#8382EB] my-6 text-[16px]">{para}</p>
         <div style={{gridTemplateColumns: '55% 45%'}} className="grid-cols-2 grid w-full md:w-[60%] items-center gap-2">
           <button className="flex items-center justify-between bg-[#264373] text-[#FFFFFF] p-3 rounded-[10px]">
-            Get started <HiOutlineArrowRight size={18} />
+            Get started 
+            {secondButton ? <IoIosArrowDroprightCircle size={18}/>:<HiOutlineArrowRight size={18} />}
           </button>
           {secondButton ? (
             <button style={{boxShadow: '0px 20px 80px rgba(51, 78, 123, 0.3)'}} className="flex items-center justify-between bg-[#FFFFFF] text-[#264373] p-3 rounded-[10px] ">
